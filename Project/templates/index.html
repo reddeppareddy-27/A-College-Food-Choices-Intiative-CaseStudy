@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<!-- Hero Section: Dynamic and professional introduction -->
+<section class="bg-gradient-to-br from-blue-900 to-gray-800 p-16 rounded-2xl shadow-2xl border border-blue-700 mb-12 text-center relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="absolute inset-0 opacity-10">
+        <svg class="w-full h-full" fill="none" viewBox="0 0 100 100">
+            <defs>
+                <pattern id="pattern-circles" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+                    <circle cx="2" cy="2" r="1" fill="#4a5568" />
+                </pattern>
+            </defs>
+            <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-circles)" />
+        </svg>
+    </div>
+
+    <div class="relative z-10">
+        <h1 class="text-5xl lg:text-7xl font-extrabold text-white mb-6 leading-tight animate-hero-pulse drop-shadow-lg">
+            Empowering College Health with Data Intelligence
+        </h1>
+        <p class="text-xl lg:text-2xl text-blue-200 max-w-4xl mx-auto mb-12">
+            Leveraging advanced analytics to transform student dietary data into actionable insights, promoting well-being and academic excellence across campus.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center space-y-5 sm:space-y-0 sm:space-x-8">
+            <a href="/dashboard" class="bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold py-4 px-10 rounded-full text-xl shadow-xl transform transition-transform duration-300 hover:scale-105 active:scale-95 ring-2 ring-emerald-300 ring-opacity-50">
+                View Live Dashboard 
+            </a>
+            <a href="/scenarios" class="bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold py-4 px-10 rounded-full text-xl shadow-xl transform transition-transform duration-300 hover:scale-105 active:scale-95 ring-2 ring-indigo-300 ring-opacity-50">
+                Explore Use Cases 
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Main Content Area with Project Overview -->
+<div class="bg-slate-800 p-10 rounded-xl shadow-2xl border border-slate-700">
+    <h2 class="text-4xl font-bold text-white mb-8 text-center border-b-2 border-emerald-500 pb-4">
+        The College Food Choices Initiative: A Case Study
+    </h2>
+    <div class="text-gray-300 leading-relaxed space-y-8 text-lg">
+        <p>
+            Welcome to the College Food Choices Analysis project. This innovative initiative is meticulously designed to revolutionize how dietary data among college students is visualized and strategically utilized. Our core mission is to drive informed decision-making, thereby significantly enhancing student health and overall academic performance. In today's dynamic educational environment, it has become unequivocally crucial to have immediate access to comprehensive insights into evolving dietary trends, habitual nutritional patterns, and their profound health impacts. This empowers all stakeholders—from university administrators to health professionals—with actionable intelligence.
+        </p>
+        <p>
+            Our project aims to forge a truly dynamic and intuitively navigable platform where diverse data, encompassing student diets, physical exercise habits, and subjective health perceptions, can be seamlessly transformed into interactive, high-fidelity visualizations and profound analytical insights. By effectively leveraging the robust capabilities of platforms like Tableau, we empower educational institutions with the critical, actionable insights necessary to foster a culture of data-driven decision-making. Ultimately, this initiative is dedicated to profoundly impacting student well-being by facilitating a deeper, evidence-based understanding of dietary dynamics and actively promoting nutritional strategies grounded in robust scientific evidence.
+        </p>
+        <p>
+            We invite you to delve deeper into our simulated <a href="/dashboard" class="text-emerald-400 hover:text-emerald-300 font-semibold underline transition-colors duration-200">Dashboard</a> to grasp the breadth of our analytical capabilities. Furthermore, follow the compelling narrative in our <a href="/story" class="text-emerald-400 hover:text-emerald-300 font-semibold underline transition-colors duration-200">Story</a> sections, where comprehensive data analysis unfolds to inform targeted interventions and personalized nutrition plans. For a practical understanding of real-world applications, we encourage you to explore the invaluable <a href="/scenarios" class="text-emerald-400 hover:text-emerald-300 font-semibold underline transition-colors duration-200">Scenarios</a> where this data-driven approach proves transformative.
+        </p>
+
+        <!-- Feature Cards with engaging icons and colors, now with entrance animations -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-12">
+            <div class="bg-gray-700 p-8 rounded-xl shadow-xl border border-gray-600 transform transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl animate-slideUp" style="animation-delay: 0s;">
+                <div class="flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full text-white text-4xl mb-6 shadow-lg">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-300 mb-4">Nutritional Intake Monitoring</h3>
+                <p class="text-gray-400">Rapidly assess concerning trends in student nutritional intake, such as a significant decrease in fruit and vegetable consumption, and deploy immediate, targeted interventions.</p>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-xl shadow-xl border border-gray-600 transform transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl animate-slideUp" style="animation-delay: 0.1s;">
+                <div class="flex items-center justify-center w-20 h-20 bg-green-600 rounded-full text-white text-4xl mb-6 shadow-lg">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.085 11.201a.5.5 0 01.025.045l1.246 1.706a1 1 0 00.999.309h3.76a.5.5 0 01.488.608l-1.605 4.815a1 1 0 01-.98.718h-4.38a1 1 0 01-.98-.718L7.697 12.164a.5.5 0 01.488-.608h3.76a1 1 0 00.999-.309l1.246-1.706a.5.5 0 01.025-.045z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 14.5l-2.5-3L9 9.5a1 1 0 011.667-.84L12 9l1.333-.34a1 1 0 011.667.84l-.5 2L12 14.5z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 13v-2.5" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10.5V8" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5V5" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5V2" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-300 mb-4">Addressing Dietary Deficiencies</h3>
+                <p class="text-gray-400">Swiftly identify widespread dietary deficiencies (e.g., low vitamin intake) and coordinate targeted health promotion campaigns and educational programs.</p>
+            </div>
+            <div class="bg-gray-700 p-8 rounded-xl shadow-xl border border-gray-600 transform transition-all duration-300 hover:scale-[1.03] hover:shadow-2xl animate-slideUp" style="animation-delay: 0.2s;">
+                <div class="flex items-center justify-center w-20 h-20 bg-purple-600 rounded-full text-white text-4xl mb-6 shadow-lg">
+                    <svg xmlns="[http://www.w3.org/2000/svg](http://www.w3.org/2000/svg)" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                </div>
+                <h3 class="text-2xl font-bold text-emerald-300 mb-4">Predictive Analytics & Plans</h3>
+                <p class="text-gray-400">Proactively anticipate and prevent potential health issues by identifying predictive indicators from historical data for personalized nutrition plans.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
